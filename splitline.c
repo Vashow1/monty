@@ -30,7 +30,8 @@ char **splitline(char **line, size_t linenumber)
 	comp5 = strcompr(token, "swap");
 	comp6 = strcompr(token, "pint");
 
-	if (comp0 != 0 && comp1 != 0 && comp2 !=0 && comp3 != 0 && comp4 !=0 && comp5 != 0 && comp6 != 0)
+	if (comp0 != 0 && comp1 != 0 && comp2 != 0
+			&& comp3 != 0 && comp4 != 0 && comp5 != 0 && comp6 != 0)
 	{
 		fprintf(stderr, "L%ld: unknown instruction %s", linenumber, token);
 		exit(EXIT_FAILURE);
