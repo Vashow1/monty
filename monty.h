@@ -43,4 +43,5 @@ int strcompr(char *s1, char *s2);
 size_t pall(const stack_t *h);
 void free_stackt(stack_t *head);
 void whatdo(char **command, stack_t **head, size_t linenumber);
+void pint(stack_t *head, size_t linenumber);
 #endif

@@ -27,5 +27,10 @@ void whatdo(char **command, stack_t **head, size_t linenumber)
 		}
 		push(head, n);
 	} else if (strcompr(command[0], "pall") == 0)
+	{
 		pall(*head);
+	} else if (strcompr(command[0], "pint") == 0)
+	{
+		pint(*head, linenumber);
+	}
 }
