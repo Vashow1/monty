@@ -41,7 +41,7 @@ char **splitline(char **line, size_t linenumber)
 		token = strtok(NULL, " ");
 		if (token == NULL)
 		{
-			fprintf(stderr, "L%ld: usage: push integer", linenumber);
+			fprintf(stderr, "L%ld: usage: push integer\n", linenumber);
 			exit(EXIT_FAILURE);
 		}
 		command[1] = token;
