@@ -13,6 +13,12 @@ void whatdo(char **command, stack_t **head, size_t linenumber)
 
 	if ((strcompr(command[0], "push")) == 0)
 	{
+		if ((strcompr(command[1], "0")) == 0)
+		{
+			n = 0;
+			push(head, n);
+			return;
+		}
 		n = atoi(command[1]);
 		if (n == 0)
 		{
