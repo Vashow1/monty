@@ -45,4 +45,5 @@ void free_stackt(stack_t *head);
 void whatdo(char **command, stack_t **head, size_t linenumber);
 void pint(stack_t *head, size_t linenumber);
 void pop(stack_t **head, size_t linenumber);
+void swap(stack_t **head, size_t linenumber);
 #endif

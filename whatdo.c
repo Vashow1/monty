@@ -35,6 +35,9 @@ void whatdo(char **command, stack_t **head, size_t linenumber)
 	} else if (strcompr(command[0], "pop") == 0)
 	{
 		pop(head, linenumber);
+	} else if (strcompr(command[0], "swap") == 0)
+	{
+		swap(head, linenumber);
 	}
 
 

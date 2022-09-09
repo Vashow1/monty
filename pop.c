@@ -12,7 +12,7 @@ void pop(stack_t **head, size_t linenumber)
 	if (*head == NULL)
 	{
 		fprintf(stderr, "L%ld: can't pop an empty stack\n", linenumber);
-		exit (EXIT_FAILURE);
+		exit(EXIT_FAILURE);
 	}
 	node = *head;
 	if (node->next == NULL)
