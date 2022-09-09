@@ -38,7 +38,12 @@ void whatdo(char **command, stack_t **head, size_t linenumber)
 	} else if (strcompr(command[0], "swap") == 0)
 	{
 		swap(head, linenumber);
+	} else if (strcompr(command[0], "add") == 0)
+	{
+		add(head, linenumber);
+	} else if (strcompr(command[0], "nop") == 0)
+	{
+		return;
 	}
-
 
 }
