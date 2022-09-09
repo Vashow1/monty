@@ -7,11 +7,16 @@
 void swap(stack_t **head, size_t linenumber)
 {
 	stack_t *node;
-
-	if ((*head)->next == NULL)
+	if(*head == NULL)
 	{
 		fprintf(stderr, "L%ld: can't swap, stack too short\n", linenumber);
-	       exit(EXIT_FAILURE);
+		exit(EXIT_FAILURE);
+	}
+
+	if ((*head)->next == NULL || *head == NULL)
+	{
+		fprintf(stderr, "L%ld: can't swap, stack too short\n", linenumber);
+		exit(EXIT_FAILURE);
 	}
 	node = *head;
 	*head = node->next;
