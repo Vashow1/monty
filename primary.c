@@ -38,13 +38,13 @@ int main(int argc, char *argv[])
 
 		}
 		linenumber++;
+		free(command);
 	}
 
 	fclose(fp);
 	if (line)
 		free(line);
 
-	free(command);
 	free_stackt(head);
 	exit(EXIT_SUCCESS);
 }
