@@ -6,7 +6,7 @@
  * @linenumber: the linenumber with the opcode
  */
 
-void add(stack_t **head, size_t linenumber)
+void sub(stack_t **head, size_t linenumber)
 {
 	int sum;
 	stack_t *node = *head;

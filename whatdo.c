@@ -44,6 +44,10 @@ void whatdo(char **command, stack_t **head, size_t linenumber)
 	} else if (strcompr(command[0], "nop") == 0)
 	{
 		return;
+	} else if (strcompr(command[0], "sub") == 0)
+	{
+		sub(head, linenumber);
 	}
+
 
 }
