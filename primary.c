@@ -34,8 +34,9 @@ int main(int argc, char *argv[])
 		if (line[0] != '\n')
 		{
 			command = splitline(&line, linenumber);
+			whatdo(command, &head, linenumber);
+
 		}
-		whatdo(command, &head, linenumber);
 		linenumber++;
 	}
 
