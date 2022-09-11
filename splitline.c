@@ -12,6 +12,7 @@ char **splitline(char **line, size_t linenumber)
 	char **command;
 	char *token;
 	int comp0, comp1, comp2, comp3, comp4, comp5, comp6;
+	int comp7;
 
 	command = malloc(sizeof(command) * 2);
 
@@ -29,9 +30,13 @@ char **splitline(char **line, size_t linenumber)
 	comp4 = strcompr(token, "nop");
 	comp5 = strcompr(token, "swap");
 	comp6 = strcompr(token, "pint");
+	comp7 = strcompr(token, "sub");
+
 
 	if (comp0 != 0 && comp1 != 0 && comp2 != 0
-			&& comp3 != 0 && comp4 != 0 && comp5 != 0 && comp6 != 0)
+			&& comp3 != 0 && comp4 != 0
+			&& comp5 != 0 && comp6 != 0
+			&& comp7 != 0)
 	{
 		fprintf(stderr, "L%ld: unknown instruction %s\n", linenumber, token);
 		exit(EXIT_FAILURE);
