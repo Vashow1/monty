@@ -38,7 +38,7 @@ char **splitline(char **line, size_t linenumber)
 			&& comp5 != 0 && comp6 != 0
 			&& comp7 != 0)
 	{
-		fprintf(stderr, "L%ld: unknown instruction %s\n", linenumber, token);
+		fprintf(stderr, "L%ld: unknown instruction %s", linenumber, token);
 		exit(EXIT_FAILURE);
 	}
 	if (comp1 == 0)

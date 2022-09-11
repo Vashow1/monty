@@ -48,6 +48,5 @@ void whatdo(char **command, stack_t **head, size_t linenumber)
 	{
 		sub(head, linenumber);
 	}
-
-
 }
+

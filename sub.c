@@ -21,7 +21,7 @@ void sub(stack_t **head, size_t linenumber)
 		fprintf(stderr, "L%ld: can't add, stack too short\n", linenumber);
 		exit(EXIT_FAILURE);
 	}
-	sum = node->n - (node->next)->n;
+	sum = -(node->n) + (node->next)->n;
 	pop(head, linenumber);
 	node = *head;
 	node->n = sum;
